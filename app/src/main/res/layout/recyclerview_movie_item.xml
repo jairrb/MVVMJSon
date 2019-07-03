@@ -35,7 +35,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:textColor="@color/text_color"
-            android:textSize="18sp"
+            android:textSize="@dimen/title_text"
             app:layout_constraintStart_toEndOf="@+id/imageViewPoster"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Avatar" />
@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:textColor="@color/text_color"
-            android:textSize="12sp"
+            android:textSize="@dimen/card_text"
             app:layout_constraintStart_toEndOf="@+id/imageViewPoster"
             app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
             tools:text="2009" />
@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:textColor="@color/text_color"
-            android:textSize="12sp"
+            android:textSize="@dimen/card_text"
             app:layout_constraintStart_toEndOf="@+id/imageViewPoster"
             app:layout_constraintTop_toBottomOf="@+id/textViewYear"
             tools:text="Action, Adventure, Fantasy" />
@@ -68,7 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:textColor="@color/text_color"
-            android:textSize="12sp"
+            android:textSize="@dimen/card_text"
             app:layout_constraintStart_toEndOf="@+id/imageViewPoster"
             app:layout_constraintTop_toBottomOf="@+id/textViewGenre"
             tools:text="James Cameron" />
