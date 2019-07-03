@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MVVMJSon</string>
+    <string name="app_name">Movies</string>
     <string name="title_format">Title: %s</string>
     <string name="year_format">&lt;b>Year:&lt;/b> %s</string>
     <string name="genre_format">&lt;b>Genre:&lt;/b> %s</string>

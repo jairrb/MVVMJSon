@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:backgroundTint="@color/colorPrimary"
+    android:orientation="vertical"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="@dimen/margin_recycler">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -23,7 +26,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:src="@drawable/avatar"/>
+            tools:src="@drawable/avatar" />
 
         <TextView
             android:id="@+id/textViewTitle"
@@ -31,6 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
+            android:textColor="@color/text_color"
             android:textSize="18sp"
             app:layout_constraintStart_toEndOf="@+id/imageViewPoster"
             app:layout_constraintTop_toTopOf="parent"
@@ -41,6 +45,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:textColor="@color/text_color"
             android:textSize="12sp"
             app:layout_constraintStart_toEndOf="@+id/imageViewPoster"
             app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
@@ -51,6 +56,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:textColor="@color/text_color"
             android:textSize="12sp"
             app:layout_constraintStart_toEndOf="@+id/imageViewPoster"
             app:layout_constraintTop_toBottomOf="@+id/textViewYear"
@@ -61,12 +67,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:textColor="@color/text_color"
             android:textSize="12sp"
             app:layout_constraintStart_toEndOf="@+id/imageViewPoster"
             app:layout_constraintTop_toBottomOf="@+id/textViewGenre"
             tools:text="James Cameron" />
-
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

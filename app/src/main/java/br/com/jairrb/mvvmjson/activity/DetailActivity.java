@@ -33,14 +33,18 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbarDetail);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setIcon(R.drawable.camera);
+
         initViews();
 
         Movie movie = getIntent().getParcelableExtra("MOVIE");
 
         if (movie != null) {
             List<String> movies = movie.getImages();
+            getSupportActionBar().setTitle(" " + movie.getTitle());
+
             String year = textViewYear.getContext().getString(R.string.year_format, movie.getYear());
             String genre = textViewGenre.getContext().getString(R.string.genre_format, movie.getGenre());
             String writer = textViewWriter.getContext().getString(R.string.writer_format, movie.getWriter());
@@ -55,8 +59,8 @@ public class DetailActivity extends AppCompatActivity {
             recyclerViewDetail.setHasFixedSize(true);
             recyclerViewDetail.setAdapter(adapter);
 
-            textViewTitle.setText(movie.getTitle());
             textViewPlot.setText(movie.getPlot());
+
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
                 textViewYear.setText(Html.fromHtml(year, Html.FROM_HTML_MODE_COMPACT));

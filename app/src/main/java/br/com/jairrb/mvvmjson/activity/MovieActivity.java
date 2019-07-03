@@ -35,6 +35,9 @@ public class MovieActivity extends AppCompatActivity implements RecyclerViewClic
         setContentView(R.layout.activity_movie);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setIcon(R.drawable.camera);
+        getSupportActionBar().setTitle(" Movies");
+
 
         progressBar = findViewById(R.id.progressBar);
         recyclerViewMovies = findViewById(R.id.recyclerViewMovies);
